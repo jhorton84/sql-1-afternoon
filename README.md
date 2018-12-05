@@ -510,3 +510,144 @@ If you see a problem or a typo, please fork, make the necessary changes, and cre
 <img src="https://s3.amazonaws.com/devmountain/readme-logo.png" width="250">
 </p>
 
+<!-- My Answers -->
+
+<!-- drop table if exists Person;
+drop table if exists Orders;
+/* drop table if exists Artist; */
+
+
+/* 1 */
+create table if not exists Person (
+  ID integer primary key autoincrement,
+  Name nvarchar(20),
+  Age integer,
+  Height integer,
+  City nvarchar(40),
+  FavoriteColor nvarchar(20)
+  );
+  
+/* 2   */
+insert into Person (Name, Age, Height, City, FavoriteColor) values ('Sam', 23, 185, 'Phoenix', 'Blue');
+insert into Person (Name, Age, Height, City, FavoriteColor) values ('JT', 27, 170, 'Mesa', 'Blue');
+insert into Person (Name, Age, Height, City, FavoriteColor) values ('Kyle', 32, 180, 'Scottsdale', 'Red');
+insert into Person (Name, Age, Height, City, FavoriteColor) values ('Nat', 36, 160, 'Chicago', 'Purple');
+insert into Person (Name, Age, Height, City, FavoriteColor) values ('Charity', 33, 160, 'Mesa', 'Teal');
+  
+/*  select * from Person; */
+
+/* 3 */
+/* select * from Person order by Height desc; */
+
+/* 4 */
+/* select * from Person order by Height asc; */
+
+/* 5 */
+/* select * from Person order by Age desc; */
+
+/* 6 */
+/* select * from Person where Age > 20; */
+
+/* 7 */
+/* select * from Person where Age = 18; */
+
+/* 8 */
+/* select * from Person where Age < 20 or Age > 30; */
+
+/* 9 */
+/* select * from Person where Age != 27; */
+
+/* 10 */
+/* select * from Person where FavoriteColor != 'Red'; */
+
+/* 11 */
+/* select * from Person where FavoriteColor !='Red' and FavoriteColor !='Blue'; */
+
+/* 12 */
+/* select * from Person where FavoriteColor ='Orange' or FavoriteColor = 'Green'; */
+
+/* 13 */
+/* select * from Person where FavoriteColor in ('Orange', 'Green', 'Blue');  */
+
+/* 14 */
+/* select * from Person where FavoriteColor in ('yellow', 'Purple'); */
+
+create table if not exists Orders(
+  PersonID integer primary key autoincrement,
+  ProductName nvarchar(50),
+  ProductPrice numeric(10,2),
+  Quantity integer
+  );
+  
+ insert into Orders (ProductName, ProductPrice, Quantity) values ('apples', 5, 10);
+ insert into Orders (ProductName, ProductPrice, Quantity) values ('oranges', 10, 5);
+ insert into Orders (ProductName, ProductPrice, Quantity) values ('cookies', 50, 100);
+ insert into Orders (ProductName, ProductPrice, Quantity) values ('batteries', 100, 50);
+ insert into Orders (ProductName, ProductPrice, Quantity) values ('computer', 500, 1);
+ 
+/*  select * from Orders; */
+
+/* select sum(Quantity) from Orders; */
+
+/* select sum(ProductPrice * Quantity) from Orders; */
+
+/* select sum(ProductPrice * Quantity) from Orders where PersonId=2; */
+
+/* insert into Artist (Name) values ('The Beatles'); */
+
+/* select * from Artist order by Name desc limit 10; */
+
+/* select * from Artist order by Name asc limit 5; */
+
+/* select * from Artist where name like 'Black%' */
+
+/* select * from Artist where name like '%Black%' */
+
+/* select  FirstName, LastName from Employee where City = 'Calgary'; */
+
+/* select FirstName, LastName, max(BirthDate) from Employee; */
+
+/* select FirstName, LastName, min(birthdate) from Employee; */
+
+/* select EmployeeId from Employee where firstName='Nancy' and lastname='Edwards'; */
+/* select * from Employee where ReportsTo =2; */
+
+/* select count(*) from Employee where city = 'Lethbridge'; */
+
+/* select count(*) from Invoice where billingCountry='USA'; */
+
+/* select max(total) from Invoice; */
+
+/* select min(total) from invoice; */
+
+/* select * from Invoice where total > 5.00; */
+
+/* select count(*) from Invoice where total < 5; */
+
+/* select count(*) from Invoice where Billingstate in ('CA', 'TX', 'AZ'); */
+
+/* select avg(total) from Invoice;  */
+
+/* select sum(total) from Invoice; */ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
